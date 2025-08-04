@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog de Biologia</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Biblioteca Contentful para converter Rich Text (deve vir antes do script.js) -->
+  <script src="https://unpkg.com/@contentful/rich-text-html-renderer@15.11.2/dist/rich-text-html-renderer.umd.js"></script>
+</head>
+<body>
+
+  <!-- Menu de navegação -->
+  <header class="navbar">
+    <div class="logo">Biologia</div>
+    <nav id="nav-links" class="nav-links">
+      <a href="#">Início</a>
+      <a href="#post1">Posts 1</a>
+      <a href="#post2">Posts 2</a>
+      <a href="#contato">Contato</a>
+      <a href="https://link-do-seu-curso.hotmart.com" target="_blank" rel="noopener" class="btn-cta">Curso Hotmart</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+  </header>
+
+  <!-- Parallax 1 -->
+  <section class="parallax" style="background-image: url('img/biologia-fundo.png');">
+    <div class="overlay">
+      <h1>Blog de Biologia</h1>
+      <p>Explorando o mundo natural com ciência</p>
+    </div>
+  </section>
+
+  <!-- Posts 1 -->
+  <main class="posts-container" id="post1">
+    <!-- Os posts do Contentful aparecerão aqui -->
+  </main>
+
+  <!-- Parallax 2 -->
+  <section class="parallax" style="background-image: url('img/biologia-fundo.png');">
+    <div class="overlay">
+      <h1>Mundo Natural</h1>
+      <p>A beleza da biodiversidade</p>
+    </div>
+  </section>
+
+  <!-- Posts 2 -->
+  <main class="posts-container" id="post2">
+    <!-- Os posts do Contentful aparecerão aqui -->
+  </main>
+
+  <!-- Seção de Contato (opcional, pode remover se não for usar) -->
+  <section id="contato" class="contato">
+    <!-- Coloque aqui um formulário, redes sociais ou informações -->
+  </section>
+
+  <!-- Botão voltar ao topo -->
+  <button id="scrollTopBtn" title="Voltar ao topo">⬆</button>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://www.instagram.com/rafaelrosabiologo" target="_blank" rel="noopener" aria-label="Instagram">📸 Instagram</a>
+      <a href="mailto:seuemail@example.com" aria-label="Email">✉️ Email</a>
+      <a href="https://github.com/AlexandreDSantos01" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
+      <a href="seu_curriculo.pdf" target="_blank" aria-label="Currículo">📄 Currículo</a>
+      <a href="https://link-do-seu-curso.hotmart.com" target="_blank" rel="noopener" class="btn-cta" aria-label="Curso Hotmart">🎓 Curso Hotmart</a>
+    </div>
+  </footer>
+
+  <!-- Script do Contentful já está no head -->
+  <!-- Seu script principal vem depois -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* ========== RESET BÁSICO ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3d59;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.dark-toggle {
+  margin-left: 1rem;
+  font-size: 1rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ========== PARALLAX ========== */
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay p {
+  font-size: 1.1rem;
+}
+
+/* ========== POSTS ========== */
+.posts-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.post {
+  background: #f5f5f5;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.post p {
+  font-size: 1rem;
+}
+
+/* ========== BOTÃO "VOLTAR AO TOPO" ========== */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 1.5rem;
+  background: #1e3d59;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+/* ========== DARK MODE ========== */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode .post {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .navbar {
+  background: #333;
+}
+
+body.dark-mode #scrollTopBtn {
+  background: #444;
+}
+
+/* ========== RODAPÉ ========== */
+.footer {
+  background: #1e3d59;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.social-links {
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVIDADE RODAPÉ */
+@media (max-width: 480px) {
+  .social-links a {
+    display: block;
+    margin: 0.4rem 0;
+  }
+}
+
+/* Estilo do botão call-to-action */
+.btn-cta {
+  background-color: #ff6f61;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.btn-cta:hover {
+  background-color: #e75c4f;
+  text-decoration: none;
+}
+
+/* Ajuste para o botão no rodapé */
+.footer .btn-cta {
+  margin-left: 0.8rem;
+  font-size: 1.1rem;
+}
+
+/* Responsividade para botão no menu */
+@media (max-width: 768px) {
+  .btn-cta {
+    margin: 0.5rem 0 0 0;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 1.6rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    background-color: #1e3d59;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .post h2 {
+    font-size: 1.2rem;
+  }
+
+  .post p {
+    font-size: 1rem;
+  }
+}
