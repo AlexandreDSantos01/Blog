@@ -6,26 +6,28 @@
   <title>Blog de Biologia</title>
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="style.css"/>
-
-  <!-- Biblioteca Contentful para converter Rich Text (deve vir antes do script.js) -->
-  <script src="https://unpkg.com/@contentful/rich-text-html-renderer@15.11.2/dist/rich-text-html-renderer.umd.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
   <!-- Menu de navegação -->
   <header class="navbar">
-    <div class="logo">Biologia</div>
-    <nav id="nav-links" class="nav-links">
-      <a href="#">Início</a>
-      <a href="#post1">Posts 1</a>
-      <a href="#post2">Posts 2</a>
-      <a href="#contato">Contato</a>
-      <a href="https://link-do-seu-curso.hotmart.com" target="_blank" rel="noopener" class="btn-cta">Curso Hotmart</a>
-    </nav>
-    <div class="hamburger" id="hamburger">&#9776;</div>
-    <button id="darkModeToggle" class="dark-toggle">🌙</button>
-  </header>
+  <div class="logo"><i class="fas fa-leaf"></i> Biologia</div>
+  <nav id="nav-links" class="nav-links">
+    <a href="#"><i class="fas fa-home" style="color: #4caf50;"></i> Início</a>
+    <a href="#post1"><i class="fas fa-dna" style="color: #9c27b0;"></i> Células</a>
+    <a href="#post2"><i class="fas fa-paw" style="color: #ff9800;"></i> Cadeia Alimentar</a>
+    <a href="#contato"><i class="fas fa-envelope" style="color: #03a9f4;"></i> Contato</a>
+    <a href="https://link-do-seu-curso.hotmart.com" class="btn-cta" target="_blank" rel="noopener">
+  <i class="fas fa-graduation-cap" style="color: white;"></i> Curso Hotmart
+</a>
+
+  </nav>
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <button id="darkModeToggle" class="dark-toggle"><i class="fas fa-moon"></i></button>
+</header>
+
 
   <!-- Parallax 1 -->
   <section class="parallax" style="background-image: url('img/biologia-fundo.png');">
@@ -37,7 +39,17 @@
 
   <!-- Posts 1 -->
   <main class="posts-container" id="post1">
-    <!-- Os posts do Contentful aparecerão aqui -->
+    <div class="post horizontal">
+      <img src="img/celula.png" alt="Imagem de célula biológica">
+      <div class="post-text">
+        <h2>Células: A Unidade da Vida</h2>
+        <p>
+          As células são as menores unidades funcionais dos seres vivos. Elas podem ser procariontes, como as bactérias,
+          ou eucariontes, como as dos animais e plantas. Dentro delas ocorrem todas as reações químicas essenciais à vida,
+          como respiração, produção de energia e divisão celular.
+        </p>
+      </div>
+    </div>
   </main>
 
   <!-- Parallax 2 -->
@@ -50,12 +62,21 @@
 
   <!-- Posts 2 -->
   <main class="posts-container" id="post2">
-    <!-- Os posts do Contentful aparecerão aqui -->
+    <div class="post vertical">
+      <div class="post-text">
+        <h2>Cadeia Alimentar</h2>
+        <p>
+          A cadeia alimentar representa o fluxo de energia entre os seres vivos. Começa nos produtores (como plantas),
+          passa pelos consumidores (herbívoros e carnívoros) e termina nos decompositores. É essencial para o equilíbrio dos ecossistemas.
+        </p>
+      </div>
+      <img src="img/cadeia-alimentar.png" alt="Imagem de cadeia alimentar na natureza">
+    </div>
   </main>
 
-  <!-- Seção de Contato (opcional, pode remover se não for usar) -->
+  <!-- Seção de Contato -->
   <section id="contato" class="contato">
-    <!-- Coloque aqui um formulário, redes sociais ou informações -->
+    <!-- Formulário ou informações de contato -->
   </section>
 
   <!-- Botão voltar ao topo -->
@@ -67,13 +88,12 @@
       <a href="https://www.instagram.com/rafaelrosabiologo" target="_blank" rel="noopener" aria-label="Instagram">📸 Instagram</a>
       <a href="mailto:seuemail@example.com" aria-label="Email">✉️ Email</a>
       <a href="https://github.com/AlexandreDSantos01" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
-      <a href="seu_curriculo.pdf" target="_blank" aria-label="Currículo">📄 Currículo</a>
+      <a href="http://lattes.cnpq.br/3714010327209793" target="_blank" aria-label="Currículo">📄 Currículo</a>
       <a href="https://link-do-seu-curso.hotmart.com" target="_blank" rel="noopener" class="btn-cta" aria-label="Curso Hotmart">🎓 Curso Hotmart</a>
     </div>
   </footer>
 
-  <!-- Script do Contentful já está no head -->
-  <!-- Seu script principal vem depois -->
+  <!-- Script principal -->
   <script src="script.js"></script>
 </body>
 </html>
